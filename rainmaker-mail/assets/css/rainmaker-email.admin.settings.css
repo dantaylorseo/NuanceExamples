@@ -1,0 +1,173 @@
+.custom-email-template-field {
+	width: 100%;
+}
+
+#rainmail-edit-lists {
+	margin: 0 0 15px;
+	max-width: 700px;
+}
+
+#rainmail-edit-lists .edit-buttons {
+	text-align: right;
+	width: 150px;
+}
+
+#rainmail-edit-lists .email_list_delete:hover {
+	background: #be023c;
+	color: #fff;
+}
+
+#edit_list_title {
+	margin-top: 0;
+}
+
+#rainmail-new-list .form-table th {
+	width: 120px;
+}
+
+.rainmail-rss-feed-url {
+	display: none;
+}
+
+#rainmail-edit-optin-content {
+	display: none;
+}
+
+#rainmail-optin-editor #notice {
+	margin-top: 0;
+	margin-bottom: 25px;
+}
+
+#rainmail-optin-editor #title-tip {
+	display: none;
+}
+
+#rainmail-optin-editor-inner {
+	display: none;
+}
+
+#rainmail-optin-editor-loaded {
+	display: none;
+}
+
+#wp-rainmail-optin-content-wrap {
+	margin-top: 25px;
+}
+
+#rainmail-optin-default-option {
+	border-bottom: 1px solid #ddd;
+	font-weight: bold;
+	margin: 0 0 20px;
+	padding-bottom: 10px;
+}
+
+#rainmail-optin-subject {
+	width: 100%;
+}
+
+#rainmail_current_footer_address {
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+    padding: 15px 20px;
+    max-width: 402px;
+}
+
+#edit-rainmail-address,
+.wp-core-ui button.rainmail_reload_address {
+	margin-bottom: 5px;
+}
+
+#email_template_logo_preview {
+	max-width: 200px;
+}
+
+@media only screen and (max-width: 768px) {
+
+	#rainmail-edit-lists td,
+	#rainmail-edit-lists td.edit-buttons {
+		border: none;
+		display: block;
+		padding: 0;
+		text-align: left;
+		width: 100%;
+	}
+
+	#rainmail-edit-lists td.edit-buttons {
+		border-bottom: 1px solid #ddd;
+		padding-bottom: 10px;
+	}
+
+}
+
+/** Editor popup */
+.editor-popup {
+	-webkit-box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.5);
+	-moz-box-shadow:    0px 0px 15px 0px rgba(50, 50, 50, 0.5);
+	box-shadow:         0px 0px 15px 0px rgba(50, 50, 50, 0.5);
+	background: #fff;
+	border-radius: 3px;
+	left: 50%;
+	max-height: 80%;
+	margin-left: -425px;
+	overflow: scroll;
+	position: fixed;
+	top: 100px;
+	width: 850px;
+	z-index: 99999;
+}
+
+.editor-popup .wrap {
+	margin: 0;
+	padding: 25px 40px 40px;
+}
+
+.editor-overlay {
+	background: rgba(0,0,0,0.3);
+	height: 100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	z-index: 9999;
+}
+
+.editor-popup .close-box.button {
+	margin-top: 10px;
+}
+
+.editor-popup .close-box.dashicons {
+	color: #666;
+	display: block;
+	font-size: 26px;
+	position: absolute;
+	overflow: hidden;
+	top: 15px;
+	right: 20px;
+}
+
+.editor-popup .close-box.dashicons:hover {
+	color: #0274be;
+}
+
+.editor-popup .wp-editor-wrap {
+	margin-bottom: 10px;
+}
+
+.editor-popup .mce-panel iframe {
+	height: 250px !important;
+}
+
+/* Preview popups */
+.wp-admin .template-preview-popup .mfp-content,
+.wp-admin .custom-template-editor-popup .mfp-content {
+    max-width: 800px;
+}
+
+.wp-admin .template-preview-popup .preview {
+	float: none;
+}
+
+#rainmail_template_preview_window {
+	min-height: 400px;
+	width: 100%;
+}

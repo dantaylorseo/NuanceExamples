@@ -1,0 +1,286 @@
+body>#main {
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top:0px;
+    padding-bottom: 50px;
+	background: -moz-linear-gradient(top,  rgba(232,232,232,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(232,232,232,0.65)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(232,232,232,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(232,232,232,0.65) 0%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(232,232,232,0.65) 0%,rgba(0,0,0,0) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(232,232,232,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6e8e8e8', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+
+}
+.table td, .table th {
+    background-color: rgba(255,255,255,0.50) !important;
+  }
+#ajaxdata {
+    padding-top: 90px;
+}
+#ajaxdata.dashdata {
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+.dashbox .list-group {
+    margin-top: 60px;
+}
+.dashbox h1 {
+	color: #fff;
+	font-size: 205%;
+	text-transform: uppercase;
+}
+.dash-logo {
+	padding-top: 200px;
+	text-align:center;
+}
+.footer {
+    position: fixed;
+    bottom: 0px;
+    right: 0;
+    width: 200px;
+    /* Set the fixed height of the footer here */
+    height: auto;
+    padding: 6px 15px;
+    z-index: 9999;
+}
+.footerleft {
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    width: 400px;
+    /* Set the fixed height of the footer here */
+    height: auto;
+    padding: 6px 15px;
+    z-index: 9999;
+}
+.footer.online, .footerleft.queue {
+    background-color: #99E8AE;
+    display: none;
+}
+.footer.offline {
+    background-color: #F29494;
+}
+.footer p {
+    color: #fff;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+}
+.rotate {
+    -webkit-transform-origin: 49% 47%;
+    -webkit-animation: spin 10s infinite linear;
+}
+@-webkit-keyframes spin {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+#sync, #online, #offline {
+    display: none;
+}
+.media {
+    height: 150px;
+    overflow-y: scroll;
+}
+.media div {
+    margin: 10px 0;
+    position: relative;
+}
+.media div a.removemedia {
+    position: absolute;
+    top: -10px;
+    right: 0;
+    font-size: 16px;
+    color: #fff;
+    background-color: red;
+    border-radius: 36px;
+    padding: 5px;
+    margin: 0;
+    line-height: 12px;
+
+}
+.media img {
+    width: 100%;
+    height: auto;
+}
+.navbar-inverse {
+    background: none;
+    background-color: #000;
+}
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a {
+    color: #fff;
+}
+.navbar-inverse .navbar-nav>li>a.active {
+    color: #5EAFFF;
+}
+.navbar-fixed-top {
+    padding-top: 25px;
+    padding-bottom: 7px;
+}
+.navbar-fixed-bottom .navbar-nav{
+    width: 100%;
+}
+.navbar-fixed-bottom  ul.navbar-nav li {
+    display: inline-block;
+    /*width: 20%; */
+	width:16.66%;
+}
+.navbar-inverse ul.navbar-nav>li>a {
+    font-size: 10px;
+    padding:0px;
+    padding-top: 10px;
+    text-align: center;
+}
+.navbar-inverse ul.navbar-nav>li>a i{
+    font-size: 22px;
+}
+.navbar-header {
+    float: right;
+}
+.navbar>.container .navbar-brand {
+    font-size: 26px;
+    text-transform: uppercase;
+    float: none;
+}
+.topbarhome, .topbarhome:active, .topbarhome.active, .topbarhome:focus, .topbarhome:hover {
+    font-size: 26px;
+    color: #fff;
+    margin-right: 30px;
+}
+.topbarback, .topbarback:active, .topbarback.active, .topbarback:focus, .topbarback:hover {
+    font-size: 20px;
+    color: #fff;
+    margin-right: 0px;
+}
+.navbar-default .navbar-brand {
+    color: #fff;
+}
+.navbar-fixed-top {
+    border-width: 0;
+}
+.well {
+    min-height: 20px;
+    padding: 19px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border: none;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+}
+.totalBox {
+    position: relative;
+    width: 22px;
+    height:22px;
+    margin-left: -28px;
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+    font-size: 11px;
+    background-color: #000;
+    border-radius: 5px;
+    padding: 3px;
+    top: -1px;
+}
+.checkbox .btn {
+    margin-right: 10px;
+    margin-left: 5px;
+}
+ul.dropdown-menu {
+    width: 300px;
+}
+ul.dropdown-menu li.input {
+    padding: 3px 20px;
+}
+.modal {
+    z-index: 100000;
+    -webkit-overflow-scrolling: auto;
+}
+.modal-backdrop, .modal-backdrop.fade.in {
+    opacity: 1;
+    background-color: rgba(209,17,17,1);
+}
+.login-modal {
+    margin-top: 100px;
+}
+.login-modal .modal-title {
+    margin-bottom: 15px;
+}
+.modal-sm {
+    width: 400px;
+}
+.priority_A {
+    background-color: red;
+    color: #fff;
+}
+.priority_B {
+    background-color: orange;
+    color: #fff;
+}
+.priority_C {
+    background-color: green;
+    color: #fff;
+}
+.priority_D {
+    background-color: lightblue;
+}
+#dashboard-back {
+	position: absolute;
+	top: 0;
+	left: 0;
+    width: 100%;
+    height: 100%;
+	background: #000!important;
+	padding: 0px;
+}
+.badge {
+	padding: 6px 7px;
+	border-radius: 100px;
+	margin-top: 25px;
+	background-color:#C22320;
+}
+.green-fa {
+	color:#08D300;
+}
+.red-fa {
+    color:red;
+}
+#sync-page {
+	margin: 30px;
+	background: #fff;
+	border-radius: 50px;
+	padding: 30px;
+}
+#startsync {
+	margin: 0 190px;
+}
+#sync-page .fa-circle {
+	color: #999;
+}
+#sync-page .fa-circle.fa-faded {
+	color: #333;
+	opacity: 0.7;
+}
+.btn-group .btn-default.active {
+    background-image: -webkit-linear-gradient(top, #4cd964 0%, #29bf42 100%);
+    background-image: -o-linear-gradient(top, #4cd964 0%, #29bf42 100%);
+    background-image: linear-gradient(to bottom, #4cd964 0%, #29bf42 100%);
+    background-repeat: repeat-x;
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#FF4CD964', endColorstr='#FF29BF42', GradientType=0);
+    filter: progid: DXImageTransform.Microsoft.gradient(enabled = false);
+    background-repeat: repeat-x;
+    border-color: #27b73f;
+    color: #fff;
+}
+.btn-group .btn-default:hover, .btn-group .btn-default:focus {
+    background-position: 0;
+}

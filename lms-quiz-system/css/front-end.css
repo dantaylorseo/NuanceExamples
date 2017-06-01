@@ -1,0 +1,59 @@
+.lms-quiz-question {
+	display: none;
+}
+
+.lms-quiz-question.active {
+	display: block;
+	margin-bottom: 25px;
+}
+
+.lms-quiz-question p {
+	font-weight: bold;
+}
+
+.lms_quiz_image {
+	max-width: 100%;
+	height: auto;
+}
+
+.lms_quiz_list,
+.entry-content .lms_quiz_list {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.lms_quiz_list li,
+.entry-content .lms_quiz_list li {
+	list-style-type: none;
+	margin: 0;
+}
+
+.lms_quiz_list input[type=radio] {
+	visibility: hidden;
+	position: absolute;
+}
+
+.lms_quiz_list label {
+	cursor: pointer;
+	display: block;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 10px 15px;
+	border: solid 1px #ddd;
+	margin-bottom: 5px;
+}
+
+.lms_quiz_list label:hover {
+	background-color: #eee;
+}
+
+.lms_quiz_list input:checked + label {
+	background-color: #333;
+	border: solid 1px #333;
+	color: #fff;
+}
+
+.lms-quiz-question button {
+	margin-top: 15px;
+}

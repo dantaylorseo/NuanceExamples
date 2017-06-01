@@ -1,0 +1,183 @@
+/* List */
+#mail-lists-select .content-box {
+    padding: 30px 40px;
+    position: relative;
+    text-align: left;
+}
+
+.rm-nav-state-sub #mail-lists-select .content-box {
+    padding: 25px;
+}
+
+#mail-lists-select .content-box .subscribers {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+#mail-lists-select .content-box .subscribers .number {
+    font-size: 28px;
+    line-height: 1.35;
+}
+
+#mail-lists-select .content-box .subscribers span {
+    color: #666;
+}
+
+#mail-lists-select .content-box .details h3 {
+    font-size: 16px;
+    line-height: 1.25;
+    margin-bottom: 5px;
+    word-wrap: break-word;
+}
+
+#mail-lists-select .content-box .details h3 a {
+    text-decoration: none;
+}
+
+#mail-lists-select .content-box .details p {
+    color: #666;
+    font-size: 13px;
+}
+
+#mail-lists-select .mail-delete-list {
+    display: none;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+#mail-lists-select .content-box:hover .mail-delete-list {
+    display: block;
+}
+
+#mail-lists-select .add-new-list {
+    text-align: center;
+}
+
+#mail-lists-select .add-new-list .dashicons-email {
+    color: #d9d9d9;
+    font-size: 80px;
+    height: 70px;
+    padding: 30px 0;
+    width: 100px;
+}
+
+#rainmail-lists-loading {
+    border: none;
+}
+
+#rainmail-edit-optin-content {
+    display: none;
+}
+
+#rainmail-optin-editor #notice {
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+#rainmail-optin-editor #title-tip {
+    display: none;
+}
+
+#wp-rainmail-optin-content-wrap {
+    margin-top: 25px;
+}
+
+#rainmail-optin-default-option {
+    border-bottom: 1px solid #ddd;
+    font-weight: bold;
+    margin: 0 0 20px;
+    padding-bottom: 10px;
+}
+
+#rainmail-optin-subject {
+    width: 100%;
+}
+
+.wp-admin .mfp-wrap .mfp-content {
+    max-width: 800px;
+}
+
+/** Editor popup */
+.editor-popup {
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.5);
+    -moz-box-shadow:    0px 0px 15px 0px rgba(50, 50, 50, 0.5);
+    box-shadow:         0px 0px 15px 0px rgba(50, 50, 50, 0.5);
+    background: #fff;
+    border-radius: 3px;
+    left: 50%;
+    max-height: 80%;
+    margin-left: -425px;
+    overflow: scroll;
+    position: fixed;
+    top: 100px;
+    width: 850px;
+    z-index: 99999;
+}
+
+.editor-popup .wrap {
+    margin: 0;
+    padding: 25px 40px 40px;
+}
+
+.editor-overlay {
+    background: rgba(0,0,0,0.3);
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 9999;
+}
+
+.editor-popup .close-box.button {
+    margin-top: 10px;
+}
+
+.editor-popup .close-box.dashicons {
+    color: #666;
+    display: block;
+    font-size: 26px;
+    position: absolute;
+    overflow: hidden;
+    top: 15px;
+    right: 20px;
+}
+
+.editor-popup .close-box.dashicons:hover {
+    color: #0274be;
+}
+
+.editor-popup .wp-editor-wrap {
+    margin-bottom: 10px;
+}
+
+.editor-popup .mce-panel iframe {
+    height: 250px !important;
+}
+
+@media only screen and (max-width: 1024px) {
+
+	#mail-lists-select .content-box {
+        padding: 25px;
+	}
+
+}
+
+@media only screen and (max-width: 768px) {
+
+	#email-list-navigation.rm-tabbed-menu ul li a {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+
+    #mail-lists-select .add-new-list .dashicons-plus {
+        padding: 0 0 10px;
+    }
+
+}

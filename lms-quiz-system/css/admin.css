@@ -1,0 +1,356 @@
+.lms_quiz_question_box {
+	border: 1px solid #ddd;
+	margin-top: 15px;
+}
+
+.lms_quiz_question_box_header {
+	background-color: #f5f5f5;
+	padding: 15px 15px;
+	border-bottom: 1px solid #ddd;
+	cursor: pointer;
+}
+
+#poststuff .lms_quiz_question_box_header h2 {
+	padding: 0;
+	margin: 0;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.lms_quiz_question_box_inner {
+	padding: 15px 25px 25px;
+}
+
+.lms_quiz_answers_table td,
+.lms_results_page_rules_table td {
+	padding: 0;
+}
+
+.lms_quiz_image_preview {
+	width: 300px;
+	height: auto;
+}
+
+.lms_quiz_add_question {
+	margin-top: 15px !important;
+}
+
+.lms_quiz_add_answer,
+.lms_quiz_add_rule {
+	margin: 3px !important;
+}
+
+.delete_quiz_question {
+	float: right;
+	margin-top: 10px;
+}
+
+.quiz_move_up,
+.quiz_move_down {
+	float: right;
+	margin-top: 12px;
+}
+
+.quiz_move_up {
+	margin-right: 10px;
+}
+
+.delete_quiz_question,
+.delete_quiz_answer,
+.quiz_move_up,
+.quiz_move_down,
+.delete_result_rule {
+	background-color: transparent;
+	border: none;
+	display: inline-block;
+	color: #999;
+	height: 30px;
+	padding: 5px;
+	overflow: hidden;
+	text-align: center;
+	width: 30px;
+}
+
+.delete_quiz_question:before,
+.delete_quiz_answer:before,
+.quiz_move_up:before,
+.quiz_move_down:before,
+.delete_result_rule:before {
+	margin-right: 10px;
+}
+
+.delete_quiz_question:hover,
+.delete_quiz_answer:hover,
+.delete_result_rule:hover {
+	color: #be023c;
+	cursor: pointer;
+}
+
+.delete_result_rule {
+	margin-left: 10px;
+	margin-top: 20px;
+}
+
+.quiz_move_up:hover,
+.quiz_move_down:hover {
+	color: #333;
+	cursor: pointer;
+}
+
+.question_text {
+	color: #aaa;
+	line-height: 1.5;
+}
+
+.lms_quiz_question_box_head_question:before {
+	content: " - ";
+}
+
+.lms_quiz_shortcode_box {
+	border: 1px solid #ddd;
+	padding: 20px 25px;
+	background-color: #f5f5f5;
+}
+
+.lms_quiz_shortcode_box p {
+	margin: 0;
+	padding-bottom: 15px;
+}
+
+.lms_quiz_question_box_inner {
+	display: none;
+}
+
+.lms_quiz_question_box:last-child .lms_quiz_question_box_inner {
+	display: block;
+}
+
+.lms_quiz_question_box_inner .form-table tbody tr:last-child th,
+.lms_quiz_question_box_inner .form-table tbody tr:last-child td,
+.lms_results_page_rules_table th,
+.lms_results_page_rules_table td {
+	border: none;
+}
+
+.lms_quiz_question_box_inner input[type=text],
+.lms_quiz_question_box_inner input[type=number],
+.lms_quiz_rule_clone input[type=number],
+.lms_quiz_rule_clone input[type=text] {
+	width: 100%;
+}
+
+.lms_quiz_answers_table {
+	width: 100%;
+}
+
+.lms_quiz_answers_table tr td:nth-child(1) {
+
+}
+
+.lms_quiz_answers_table tr td:nth-child(2) {
+	min-width: 100px;
+	width: 100px;
+}
+
+.lms_quiz_answers_table tr td:nth-child(3) {
+	text-align: right;
+	width: 40px;
+}
+
+.lms_results_page_rules_table td:nth-child(1),
+.lms_results_page_rules_table th:nth-child(1),
+.lms_results_page_rules_table td:nth-child(2),
+.lms_results_page_rules_table th:nth-child(2) {
+	min-width: 80px;
+	width: 80px;
+}
+
+.lms_results_page_rules_table td:nth-child(3) {
+	width: 500px
+}
+
+.lms_quiz_rpt {
+	display: none;
+}
+
+.lms_quiz_rpt.active {
+	display: table-row;
+}
+
+.post-type-lms_quiz_submission .page-title-action {
+	display: none;
+}
+
+.post-type-lms_quiz_submission h2 a.add-new-h2 {
+	display: none;
+}
+
+.lms_quiz_rule_clone td {
+	padding-bottom: 5px;
+}
+
+.lms_quiz_rule_clone label {
+	color: #666;
+	font-size: 12px;
+	font-weight: normal;
+}
+
+.misc-pub-post-status,
+.misc-pub-visibility,
+#save-post {
+	display: none;
+}
+
+.edit-timestamp {
+	display: none !important;
+}
+
+/* Reports */
+.lms_quiz_total_entries {
+	color: #333;
+	font-size: 24px;
+	font-weight: normal;
+	margin: 45px 25px;
+}
+
+.lms_quiz_total_entries strong {
+	color: #0274be;
+	margin-left: 10px;
+}
+
+.lms_quiz_reports_question {
+	border: 1px solid #ddd;
+	margin-bottom: 30px;
+	padding: 25px;
+}
+
+.lms_quiz_reports_question h3 {
+	background-color: #fff;
+	color: #333;
+	display: inline-block;
+	margin: 0;
+	top: -35px;
+	padding: 0 10px;
+	position: relative;
+}
+
+.lms_quiz_reports_question h3 em {
+	color: #666;
+	font-size: 13px;
+	font-weight: normal;
+	margin-bottom: 5px;
+	margin-right: 5px;
+}
+
+.lms_quiz_reports_table {
+	border-collapse: collapse;
+    clear: both;
+    margin-top: -15px;
+    width: 100%;
+}
+
+.lms_quiz_reports_table td,
+.lms_quiz_reports_table th {
+	font-size: 14px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+.lms_quiz_reports_table th {
+	background-color: #f5f5f5;
+}
+
+.lms_quiz_reports_table .lms_quiz_agg_1 {
+	width: 20%;
+}
+
+.lms_quiz_reports_table .lms_quiz_agg_3,
+.lms_quiz_reports_table .lms_quiz_agg_2 {
+	font-weight: bold;
+	text-align: center;
+	width: 2%;
+}
+
+.lms_quiz_reports_table .lms_quiz_agg_4 {
+	padding: 0;
+	position: relative;
+	overflow: hidden;
+	width: 6%;
+}
+
+.lms_quiz_score_bar {
+	display: inline-block;
+	background-color: #0274be;
+	height: 20px;
+	left: 0px;
+	top: 9px;
+	position: absolute;
+}
+
+.lms_quiz_score {
+	display: inline-block;
+	width: 70px;
+}
+
+.lms_quiz_individual_answers {
+	margin-top: 40px;
+}
+
+.lms_quiz_individual_answers h2 {
+	font-weight: bold;
+}
+
+.lms_quiz_individual_answers th,
+.lms_quiz_individual_answers td {
+	padding: 15px 10px;
+}
+
+.lms_quiz_individual_answers th,
+.lms_quiz_individual_answers tr:last-child td {
+	background-color: #f5f5f5;
+}
+
+.lms_quiz_individual_answers th:nth-child(3),
+.lms_quiz_individual_answers td:nth-child(3),
+.lms_quiz_individual_answers tr:last-child td {
+	font-weight: bold;
+	text-align: center;
+	width: 15%;
+}
+
+.lms_quiz_individual_answers tr:last-child th {
+	text-align: right;
+}
+
+
+@media only screen and (max-width: 1300px) {
+
+	.lms_results_page_rules_table td,
+	.lms_quiz_answers_table td {
+		clear: none;
+		display: inline-block;
+		margin-right: 5px;
+		width: auto;
+	}
+
+	.lms_results_page_rules_table .lms_quiz_rule_clone {
+		border-bottom: 1px solid #ddd;
+		clear: both;
+		display: block;
+		margin-top: 15px;
+	}
+
+	.lms_quiz_answers_table td:nth-child(1) {
+		width: 100%
+	}
+
+	.lms_results_page_rules_table td:nth-child(3) {
+		width: 75%;
+	}
+
+	.lms_results_page_rules_table th {
+		display: inline;
+	}
+
+}

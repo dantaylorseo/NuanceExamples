@@ -1,0 +1,70 @@
+.openrate,
+.clickrate,
+.unsubscribes {
+	display:none;
+}
+
+.broadcast-preview-popup .mfp-content {
+    background-image: url( '../../../spui/images/preloader.gif' );
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 600px;
+    max-width: 850px;
+}
+
+#broadcast_preview,
+#broadcast_preview_window {
+    height: 100%;
+    width: 100%;
+}
+
+.wp-list-table td.column-unsubscribes {
+    color: #BE023C;
+}
+
+.wp-list-table td.column-recipients {
+    font-weight: bold;
+}
+
+.wp-list-table .no-data {
+    color: #ddd;
+}
+
+.rm-nav-state-sub .wp-list-table .column-recipients,
+.rm-nav-state-sub .wp-list-table .column-unsubscribes {
+    width: 18%;
+}
+
+@media only screen and (max-width: 1140px) {
+
+    .post-type-mail .wp-list-table .column-clickrate,
+    .post-type-mail .wp-list-table .column-openrate {
+        display: none !important;
+    }
+
+}
+
+@media only screen and (max-width: 1023px) {
+    
+    .post-type-autoresponder .wp-list-table .column-clickrate,
+    .post-type-autoresponder .wp-list-table .column-openrate,
+    .post-type-autoresponder .wp-list-table .column-unsubscribes,
+    .post-type-autoresponder .wp-list-table .column-recipients {
+        display: none !important;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .post-type-mail .wp-list-table.widefat .column-unsubscribes,
+    .post-type-mail .wp-list-table.widefat .column-openrate,
+    .post-type-mail .wp-list-table.widefat .column-clickrate {
+        display: none !important;
+    }
+
+    .post-type-mail .wp-list-table.widefat .column-recipients {
+        display: table-cell;
+    }
+
+}

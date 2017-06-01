@@ -1,0 +1,65 @@
+<?php
+/*
+Plugin Name: 	Feedblitz Opt-in Gateway
+Description: 	Add Feedblitz integration to AccessPress and StudioPress Landing Pages
+Version: 		0.1
+Author: 		Copyblogger Media
+Author URI: 	http://newrainmaker.com
+
+*/
+
+global $Feedblitz_Optin_Gateway;
+
+define( 'ACCESSPRESS_FEEDBLITZ_INCLUDES', plugin_dir_path( __FILE__ ) . '/includes/' );
+
+class Feedblitz_Optin_Gateway {
+
+	/**
+	 * The Feedblitz API Key
+	 */
+	public $apikey;
+	
+	function __construct(){
+	
+		add_action( 'premise_member_setup', array( $this, 'accesspress_register_gateway'  ) );
+		add_action( 'rm_landing_page_init', array( $this, 'landing_page_register_gateway' ) );
+		
+	}
+	
+	function accesspress_register_gateway(){
+	
+		require_once( ACCESSPRESS_FEEDBLITZ_INCLUDES . 'AccessPress_Feedblitz_Optin_Gateway.php' );
+		
+		memberaccess_register_payment_gateway( 'AccessPress_Feedblitz_Optin_Gateway' );
+		
+	}
+	
+	function landing_page_register_gateway(){
+		
+		require_once( ACCESSPRESS_FEEDBLITZ_INCLUDES . 'LandingPage_Feedblitz_Optin_Gateway.php' );
+		
+	}
+	
+	function get_credentials(){
+		
+		if( $this->apikey ){
+			return $this->apikey;
+		}
+		
+		if( function_exists( 'accesspress_get_option' ) ){
+			$this->apikey = accesspress_get_option( 'Feedblitz_api' );
+		}
+		if( function_exists( 'rm_lp_get_option' ) && ! ( $this->apikey ) ){
+			$this->apikey = rm_lp_get_option( 'Feedblitz_api' );
+		}
+		else{
+			$this->apikey = false;
+		}
+		
+		return $this->apikey;
+		
+	}
+	
+}
+
+$Feedblitz_Optin_Gateway = new Feedblitz_Optin_Gateway;
